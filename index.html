@@ -1,30 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solvra</title>
+    <title>Min Exklusiva Butik</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header med navigering -->
     <header>
-        <h1>Welcome to Our Store!</h1>
-        <p>Everyday-gadgets delivered to your doorsteps.</p>
+        <div class="logo">
+            <h1>Min Exklusiva Butik</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Hem</a></li>
+                <li><a href="#products">Produkter</a></li>
+                <li><a href="#about">Om Oss</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="products">
-        <h2>Our Featured Products</h2>
-        <div class="product">
-            <h3>soda can lid with straw</h3>
-            <img src="https://via.placeholder.com/200" alt="Handbag">
-            <p>$10</p>
-            <button>Buy Now</button>
-        </div>
-        <!-- You can add more products here -->
+    <!-- Hemsektion -->
+    <section id="home" class="home">
+        <h2>Välkommen till vår exklusiva butik</h2>
+        <p>Upptäck unika produkter som lyfter din stil.</p>
+        <button><a href="#products">Se våra produkter</a></button>
     </section>
-    
+
+    <!-- Produkter -->
+    <section id="products" class="products">
+        <h2>Våra Exklusiva Produkter</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="product1.jpg" alt="Exklusiv Väska">
+                <h3>Exklusiv Väska</h3>
+                <p>En elegant och tidlös väska som passar till alla tillfällen.</p>
+                <button>Köp nu</button>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Lyxig Jacka">
+                <h3>Lyxig Jacka</h3>
+                <p>Värme och stil i ett. Perfekt för vintermånaderna.</p>
+                <button>Köp nu</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Om Oss -->
+    <section id="about" class="about">
+        <h2>Om Oss</h2>
+        <p>Vi erbjuder noggrant utvalda exklusiva produkter av hög kvalitet. Vår mission är att ge våra kunder tillgång till stiliga, hållbara och tidlösa modeplagg och accessoarer.</p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Exclusive Dropshipping Store</p>
+        <p>&copy; 2024 Min Exklusiva Butik</p>
     </footer>
 </body>
 </html>
