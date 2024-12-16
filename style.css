@@ -1,4 +1,4 @@
-/* Grundläggande stilar */
+/* Basic styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -7,9 +7,9 @@ body {
   padding: 0;
 }
 
-/* Header och navigation */
+/* Header and navigation */
 header {
-  background-color: #2f2f2f; /* Färgen ska matcha loggans färg */
+  background-color: #2f2f2f; /* Matches logo colors */
   padding: 20px;
   text-align: center;
   color: white;
@@ -36,7 +36,7 @@ header .logo {
   height: auto;
 }
 
-/* Sektioner */
+/* Sections */
 .section {
   padding: 50px 20px;
   text-align: center;
@@ -52,9 +52,9 @@ header .logo {
   color: #666;
 }
 
-/* Knappar (Navigation och inuti sektioner) */
+/* Button styles (new color scheme) */
 nav ul li a, .section button {
-  background-color: #4CAF50; /* Huvudfärg, matchar loggan */
+  background-color: #555; /* Dark grey for buttons */
   padding: 15px 25px;
   color: white;
   border-radius: 5px;
@@ -81,7 +81,7 @@ footer form input, footer form textarea {
 
 footer form button {
   padding: 12px 20px;
-  background-color: #4CAF50;
+  background-color: #555; /* Dark grey for button */
   color: white;
   border: none;
   border-radius: 5px;
@@ -89,5 +89,32 @@ footer form button {
 }
 
 footer form button:hover {
-  background-color: #45a049;
+  background-color: #444;
+}
+
+/* Product grid */
+.product-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.product {
+  width: 30%;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.product p {
+  font-size: 18px;
+  color: #777;
 }
