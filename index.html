@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solvra - Solving Your Issues. Discover affordable and innovative gadgets to simplify your daily life.">
     <title>Solvra - Solving Your Issues</title>
     <style>
         /* General Reset */
@@ -10,7 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f0f0f0;
             color: #333;
         }
 
@@ -19,6 +20,7 @@
             padding: 40px;
             background-color: #fff;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
         header img {
@@ -31,22 +33,24 @@
             font-size: 3rem;
             margin: 0;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            color: #333;
         }
 
         nav {
             text-align: center;
-            padding: 20px;
+            padding: 15px 0;
             background-color: #333;
         }
 
         nav a {
             text-decoration: none;
-            color: #fff;
+            color: white;
             margin: 0 15px;
             padding: 10px 15px;
             background-color: #4CAF50;
             border-radius: 5px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
         }
 
         nav a:hover {
@@ -63,16 +67,26 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
         footer {
             text-align: center;
-            padding: 40px;
+            padding: 30px;
             background-color: #333;
-            color: #fff;
+            color: white;
         }
 
         .contact-form input, .contact-form textarea, .contact-form button {
             display: block;
-            margin: 10px auto;
+            margin: 15px auto;
             width: 80%;
             max-width: 400px;
             padding: 10px;
@@ -84,8 +98,9 @@
         .contact-form button {
             background-color: #4CAF50;
             color: white;
-            cursor: pointer;
             border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
         }
 
         .contact-form button:hover {
@@ -112,17 +127,12 @@
         <h2>Products</h2>
         <p>Explore our curated collection of practical and innovative gadgets!</p>
         <!-- Placeholder for products -->
-        <div class="product-grid">
-            <!-- Add product items here -->
-        </div>
     </section>
 
     <section id="track-order">
         <h2>Track Your Order</h2>
         <p>Enter your order details below to track your shipment.</p>
-        <div>
-            <!-- Placeholder for a tracking form -->
-        </div>
+        <!-- Placeholder for tracking -->
     </section>
 
     <section id="faq">
@@ -134,13 +144,13 @@
         <h2>About Us</h2>
         <p>
             Solvra - Solving Your Issues<br>
-            At Solvra, we are dedicated to offering affordable and innovative everyday gadgets designed to make your life easier.
+            At Solvra, we are dedicated to offering affordable and innovative everyday gadgets designed to make your life easier. Explore our collection of practical tools and solutions today.
         </p>
     </section>
 
     <footer>
         <h3>Contact Us</h3>
-        <form class="contact-form" action="https://formspree.io/f/xgvejlaa" method="POST">
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
