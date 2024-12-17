@@ -3,173 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solvra</title>
+    <title>Solvra - Solving Your Issues</title>
     <style>
-        /* General styles */
+        /* General Reset */
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f7f7f7;
+            padding: 0;
+            background-color: #f5f5f5;
             color: #333;
         }
 
         header {
-            background: #1c1c1c;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 16px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 50px 20px;
-        }
-
-        h2 {
             text-align: center;
-            color: #1c1c1c;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
             margin-bottom: 20px;
         }
 
-        .buttons {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 50px;
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
 
-        .buttons a {
-            background: #333;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .buttons a:hover {
-            background: #555;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .product-card {
-            background: white;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+        nav {
             text-align: center;
+            padding: 20px;
+            background-color: #333;
         }
 
-        .product-card img {
-            max-width: 100%;
-            height: auto;
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
             border-radius: 5px;
-            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+        }
+
+        section {
+            padding: 60px;
+            text-align: center;
+            background-color: #fff;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         footer {
-            background: #333;
-            color: white;
-            padding: 20px;
             text-align: center;
+            padding: 40px;
+            background-color: #333;
+            color: #fff;
         }
 
-        footer a {
-            color: #ffa500;
-            text-decoration: none;
+        .contact-form input, .contact-form textarea, .contact-form button {
+            display: block;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
-        footer a:hover {
-            text-decoration: underline;
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Solvra - Solving Your Issues</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#products">Products</a>
-            <a href="#track-order">Track Your Order</a>
-            <a href="#faq">FAQ</a>
-            <a href="#about-us">About Us</a>
-            <a href="#contact-us">Contact Us</a>
-        </nav>
+        <!-- Add your logo file here -->
+        <img src="logo.png" alt="Solvra Logo">
+        <h1>Welcome to Solvra</h1>
     </header>
 
-    <section id="home">
-        <h2>Welcome to Solvra</h2>
-        <p>Your one-stop shop for affordable, innovative everyday gadgets.</p>
-    </section>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#track-order">Track Your Order</a>
+        <a href="#faq">FAQ</a>
+        <a href="#about-us">About Us</a>
+    </nav>
 
     <section id="products">
-        <h2>Our Products</h2>
+        <h2>Products</h2>
+        <p>Explore our curated collection of practical and innovative gadgets!</p>
+        <!-- Placeholder for products -->
         <div class="product-grid">
-            <div class="product-card">
-                <img src="placeholder1.jpg" alt="Product 1">
-                <h3>Product Name</h3>
-                <p>Short description of the product.</p>
-                <p><strong>$19.99</strong></p>
-                <a href="#">Buy Now</a>
-            </div>
-            <!-- Add more product cards here -->
+            <!-- Add product items here -->
         </div>
     </section>
 
     <section id="track-order">
         <h2>Track Your Order</h2>
-        <p>Enter your tracking number to check the status of your order.</p>
+        <p>Enter your order details below to track your shipment.</p>
+        <div>
+            <!-- Placeholder for a tracking form -->
+        </div>
     </section>
 
     <section id="faq">
         <h2>FAQ</h2>
-        <p>Here you can find answers to commonly asked questions. Coming soon!</p>
+        <p>Answers to frequently asked questions will appear here.</p>
     </section>
 
     <section id="about-us">
         <h2>About Us</h2>
-        <p>At Solvra, we are dedicated to offering affordable and innovative everyday gadgets designed to make your life easier. Explore our collection to find practical solutions for your daily routines. Solvra - Solving Your Issues.</p>
-    </section>
-
-    <section id="contact-us">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/xgvejlaa" method="POST">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
-            <button type="submit">Send Message</button>
-        </form>
+        <p>
+            Solvra - Solving Your Issues<br>
+            At Solvra, we are dedicated to offering affordable and innovative everyday gadgets designed to make your life easier.
+        </p>
     </section>
 
     <footer>
-        <p>© 2024 Solvra. All rights reserved. <a href="#contact-us">Contact Us</a></p>
+        <h3>Contact Us</h3>
+        <form class="contact-form" action="https://formspree.io/f/xgvejlaa" method="POST">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>&copy; 2024 Solvra. All rights reserved.</p>
     </footer>
 </body>
 </html>
