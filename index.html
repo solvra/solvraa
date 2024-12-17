@@ -1,101 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solvra - Solving Your Issues</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solvra</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background: #1c1c1c;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1c1c1c;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .buttons a {
+            background: #333;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .buttons a:hover {
+            background: #555;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffa500;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Solvra - Solving Your Issues</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#track-order">Track Your Order</a>
+            <a href="#faq">FAQ</a>
+            <a href="#about-us">About Us</a>
+            <a href="#contact-us">Contact Us</a>
+        </nav>
+    </header>
 
-  <!-- Header with logo -->
-  <header>
-    <div class="logo-container">
-      <img src="logga.png" alt="Solvra Logo" class="logo"> <!-- Make sure your logo file name is correct -->
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#track-order">Track Your Order</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#about-us">About Us</a></li>
-      </ul>
-    </nav>
-  </header>
+    <section id="home">
+        <h2>Welcome to Solvra</h2>
+        <p>Your one-stop shop for affordable, innovative everyday gadgets.</p>
+    </section>
 
-  <!-- Home Section -->
-  <section id="home" class="section">
-    <div class="content">
-      <h1>Welcome to Solvra</h1>
-      <p>Solvra - Solving your issues with affordable and innovative gadgets.</p>
-    </div>
-  </section>
-
-  <!-- Products Section -->
-  <section id="products" class="section">
-    <div class="content">
-      <h2>Our Products</h2>
-      <p>Explore a wide range of affordable everyday gadgets designed to simplify your life.</p>
-      <div class="product-grid">
-        <div class="product">
-          <img src="product1.jpg" alt="Product 1"> <!-- Use your product image filenames -->
-          <h3>Smart Organizer</h3>
-          <p>Price: $19.99</p>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="placeholder1.jpg" alt="Product 1">
+                <h3>Product Name</h3>
+                <p>Short description of the product.</p>
+                <p><strong>$19.99</strong></p>
+                <a href="#">Buy Now</a>
+            </div>
+            <!-- Add more product cards here -->
         </div>
-        <div class="product">
-          <img src="product2.jpg" alt="Product 2">
-          <h3>Portable Blender</h3>
-          <p>Price: $29.99</p>
-        </div>
-        <div class="product">
-          <img src="product3.jpg" alt="Product 3">
-          <h3>Wireless Charger</h3>
-          <p>Price: $15.99</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Track Your Order Section -->
-  <section id="track-order" class="section">
-    <div class="content">
-      <h2>Track Your Order</h2>
-      <p>Keep track of your purchases easily with our tracking tool.</p>
-    </div>
-  </section>
+    <section id="track-order">
+        <h2>Track Your Order</h2>
+        <p>Enter your tracking number to check the status of your order.</p>
+    </section>
 
-  <!-- FAQ Section -->
-  <section id="faq" class="section">
-    <div class="content">
-      <h2>FAQ</h2>
-      <p>Check back soon for our frequently asked questions!</p>
-    </div>
-  </section>
+    <section id="faq">
+        <h2>FAQ</h2>
+        <p>Here you can find answers to commonly asked questions. Coming soon!</p>
+    </section>
 
-  <!-- About Us Section -->
-  <section id="about-us" class="section">
-    <div class="content">
-      <h2>About Us</h2>
-      <p>At Solvra, we are dedicated to offering affordable and innovative everyday gadgets designed to make your life easier. Whether you're looking for practical tools to simplify your daily routines or clever solutions to common challenges, we have you covered. Our mission is to provide high-quality products at accessible prices, ensuring that you can enhance your lifestyle without breaking the bank.</p>
-      <p>We carefully curate each item in our collection, keeping functionality, durability, and convenience at the forefront. Our gadgets are designed to save you time, reduce stress, and improve efficiency in your everyday tasks. From kitchen helpers to organizational tools, we believe that small changes can lead to big improvements in the way you live and work.</p>
-      <p>At Solvra, we are committed to offering products that blend practicality with innovation, making your day-to-day life just a little bit easier and a lot more enjoyable. Explore our selection and find the perfect gadget for your needs today.</p>
-      <h3>Solvra - Solving Your Issues</h3>
-    </div>
-  </section>
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>At Solvra, we are dedicated to offering affordable and innovative everyday gadgets designed to make your life easier. Explore our collection to find practical solutions for your daily routines. Solvra - Solving Your Issues.</p>
+    </section>
 
-  <!-- Contact Us Section -->
-  <footer>
-    <div class="content">
-      <h4>Contact Us</h4>
-      <p>Have any questions? Feel free to reach out to us anytime.</p>
-      <form>
-        <input type="email" placeholder="Your email address">
-        <textarea placeholder="Your message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </footer>
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
+    <footer>
+        <p>© 2024 Solvra. All rights reserved. <a href="#contact-us">Contact Us</a></p>
+    </footer>
 </body>
 </html>
